@@ -125,10 +125,6 @@ export async function fetchFilteredInvoices(
 }
 
 export async function fetchInvoicesPages(query: string) {
-
-  await new Promise((resolve) => setTimeout(resolve, 3000));
-
-  console.log("delay 3 seconds");
   
   try {
     const data = await sql`SELECT COUNT(*)
