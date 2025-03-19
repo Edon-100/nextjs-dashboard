@@ -6,8 +6,6 @@ import { LatestInvoice } from "@/app/lib/definitions";
 import { fetchLatestInvoices } from "@/app/lib/data";
 import { cookies } from "next/headers";
 
-export const experimental_ppr = true;
-
 export default async function LatestInvoices() {
   const latestInvoices = await fetchLatestInvoices();
 
